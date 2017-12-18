@@ -45,7 +45,9 @@ TARGET_RECOVERY_FSTAB := device/lge/g3ds/rootdir/etc/fstab.g3
 BOARD_NFC_CHIPSET := pn547
 
 # RIL
-BOARD_RIL_CLASS += ../../../device/lge/g3ds/ril
+BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_10
+BOARD_GLOBAL_CPPFLAGS += -DUSE_RIL_VERSION_10
+TARGET_RIL_VARIANT := caf
 
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_g3ds
