@@ -27,6 +27,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_dualsim_defconfig
 TARGET_REQUIRES_BUMP := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
